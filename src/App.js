@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import Box from './Box';
+import NewBox from './NewBox';
+import NewBoxList from './NewBoxList';
+import BoxForm from './BoxForm';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <NewBox height = {2} width = {2} color = {"red"} />
+      <NewBox height = {4} width = {4} color = {"green"} /> */}
+      {/* <Box height = {2} width = {2} color = {"green"}/> */}
+      <NewBoxList />
+
+  
     </div>
   );
 }

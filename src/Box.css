@@ -1,0 +1,12 @@
+.box{
+    margin-top: 2rem;
+    margin-left: 2rem}
+
+    .box__button{
+        margin-left: 2rem;
+    }
+
+    .box__div{
+        margin-top: 2rem;
+        margin-left: 4rem;
+    }
