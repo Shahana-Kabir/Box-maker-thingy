@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import NewBoxList from './NewBoxList';
 import NewBox from './NewBox';
+const uuid = require('uuid').v4;
+
 
 class BoxForm extends Component {
     constructor(props){
@@ -24,15 +26,12 @@ onChangeColor = (e)=>{
     this.setState ({color: e.target.value})
 }
 
-addBox = ()=>{
-    this.props.createBox(this.state)
 
-
-}
 
 handleSubmit = (e)=> {
-    e.preventDefault();
-    this.addBox();
+    e.preventDefault();    
+    const newBox1 = {...this.state, id: uuid()};
+    this.props.createBox(newBox1);
     this.setState({
         height: '', 
          width: '',

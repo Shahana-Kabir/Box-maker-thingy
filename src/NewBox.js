@@ -12,6 +12,9 @@ class NewBox extends Component{
                 }
             }
             />
+            <button onClick = {this.props.removeBox}>
+                X
+            </button>
                
             </div>
         )
